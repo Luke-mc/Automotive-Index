@@ -1,5 +1,8 @@
 -- db indexed_cars
 
+CREATE INDEX idx_title
+ON car_models (make_code);
+
 CREATE TABLE IF NOT EXISTS car_models
 (
  id serial,
